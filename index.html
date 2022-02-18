@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Oxygen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url(image/bg.png);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">Oxygen</div>
+            <div class="menu">
+                <ul>
+                    <li id="cantNotif"><a href="#">Home</a></li>
+                    <li id="cantNotif"><a href="#">Class</a></li>
+                    <li id="cantNotif"><a href="#">Mentor</a></li>
+                    <li id="cantNotif"><a href="#">About</a></li>
+                    <li><a href="register.html" class="signUp-header">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="form">
+            <img src="image/gambarMenu.png" alt="" class="img-menu">
+            <div class="form-login" >
+                <div class="form-center" align="center">
+                    <h2 class="text-login" >LOGIN</h2>
+                    <label for="username-login"></label>
+                    <input type="text" id="username-login" name="username-login" placeholder="Username"><br>
+                    <label for="password-login"></label>
+                    <input type="password" id="password-login" name="password-login" placeholder="Password"> <br>
+                    
+                </div>
+                
+                <div class="login-with">
+                    <button class="facebook login-button"></button>
+                    <button class="google login-button"></button>
+                    <button class="appleId login-button"></button>
+                </div>
+                <div class="stay-signed">
+                    <input type="checkbox" name="stay-signed-button" id="stay-signed-button">
+                    <span class="stay-signed-button_image"></span>
+                    <span class="stay-signed-button_text">Stay signed in</span>
+                </div>
+
+                <button id="login" onclick="check()"></button>
+
+                <div class="setup-account" align="center">
+                    <ul>
+                        <li><a href="">CAN'T SIGN IN?</a></li>
+                        <li><a href="register.html">CREATE ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js">script.js</script>
+</body>
+</html>

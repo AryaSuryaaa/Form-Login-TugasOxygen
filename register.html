@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Oxygen</title>
+    <link rel="stylesheet" href="css/register-style.css">
+    <style>
+        body {
+            background-image: url(image/bg.png);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">Oxygen</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Class</a></li>
+                    <li><a href="#">Mentor</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="index.html" class="login-header">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="form">
+            <img src="image/gambarMenu.png" alt="" class="img-menu">
+            <div class="form-login" >
+                <div class="form-center" align="center">
+                    <h2 class="text-login" >REGISTER</h2>
+                    <label for="fisrtName"></label>
+                    <input type="text" id="firstName" name="fisrtName" placeholder="First Name" required>
+                    <label for="lastName"></label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    <label for="username-regis"></label>
+                    <input type="text" id="username-regis" name="username-regis" placeholder="Username"><br>
+                    <label for="password-regis"></label>
+                    <input type="password" id="password-regis" name="password-regis" placeholder="Password"> <br>
+                </div>
+                
+                <div class="textLoginWith" align="center">
+                    <p>YOU CAN ALSO CREATE AN ACCOUNT WITH</p>
+                </div>
+
+                <div class="login-with">
+                    <button class="facebook login-button"></button>
+                    <button class="google login-button"></button>
+                    <button class="appleId login-button"></button>
+                </div>
+
+                <button id="signup" onclick="data()"></button>
+
+                <div class="setup-account" align="center">
+                    <ul>
+                        <li><a href="index.html">ALREADY HAVE AN ACCOUNT?</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
