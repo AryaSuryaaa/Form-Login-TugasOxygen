@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Oxygen</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register-style.css">
     <style>
         body {
             background-image: url(image/bg.png);
@@ -22,7 +22,7 @@
                     <li id="cantNotif2"><a href="#">Class</a></li>
                     <li id="cantNotif3"><a href="#">Mentor</a></li>
                     <li id="cantNotif4"><a href="#">About</a></li>
-                    <li><a href="register.html" class="signUp-header">Sign Up</a></li>
+                    <li><a href="index.html" class="login-header">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -33,38 +33,40 @@
             <img src="image/gambarMenu.png" alt="" class="img-menu">
             <div class="form-login" >
                 <div class="form-center" align="center">
-                    <h2 class="text-login" >LOGIN</h2>
-                    <label for="username-login"></label>
-                    <input type="text" id="username-login" name="username-login" placeholder="Username"><br>
-                    <label for="password-login"></label>
-                    <input type="password" id="password-login" name="password-login" placeholder="Password"> <br>
-                    
+                    <h2 class="text-login" >REGISTER</h2>
+                    <label for="fisrtName"></label>
+                    <input type="text" id="firstName" name="fisrtName" placeholder="First Name" required>
+                    <label for="lastName"></label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    <label for="username-regis"></label>
+                    <input type="text" id="username-regis" name="username-regis" placeholder="Username"><br>
+                    <label for="password-regis"></label>
+                    <input type="password" id="password-regis" name="password-regis" placeholder="Password"> <br>
                 </div>
                 
-                <div class="login-with">
-                    <button class="facebook login-button" id="cantNotif5"></button>
-                    <button class="google login-button" id="cantNotif6"></button>
-                    <button class="appleId login-button" id="cantNotif7"></button>
-                </div>
-                <div class="stay-signed">
-                    <input type="checkbox" name="stay-signed-button" id="stay-signed-button">
-                    <span class="stay-signed-button_image"></span>
-                    <span class="stay-signed-button_text">Stay signed in</span>
+                <div class="textLoginWith" align="center">
+                    <p>YOU CAN ALSO CREATE AN ACCOUNT WITH</p>
                 </div>
 
-                <button id="login" onclick="check()"></button>
+                <div class="login-with">
+                    <button class="facebook login-button"></button>
+                    <button class="google login-button"></button>
+                    <button class="appleId login-button"></button>
+                </div>
+
+                <button id="signup" onclick="data()"></button>
 
                 <div class="setup-account" align="center">
                     <ul>
-                        <li id="cantNotif8"><a href="" >CAN'T SIGN IN?</a></li>
-                        <li><a href="register.html">CREATE ACCOUNT</a></li>
+                        <li><a href="index.html">ALREADY HAVE AN ACCOUNT?</a></li>
                     </ul>
+                    
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="js/script.js">script.js</script>
-    <script src="js/notif.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/notif-regis.js"></script>
 </body>
 </html>
